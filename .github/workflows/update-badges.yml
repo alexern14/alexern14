@@ -1,10 +1,10 @@
 name: Update badges
 
-# on:
-#   schedule:
-#     # Runs at 2am UTC
-#     - cron: "0 2 * * *"
-on: [workflow_dispatch]
+on:
+  schedule:
+    # Runs at 2am UTC on Mondays
+    - cron: "0 2 * * MON"
+# on: [workflow_dispatch]
 
 jobs:
   update-readme:
